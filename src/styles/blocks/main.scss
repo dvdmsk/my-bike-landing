@@ -1,0 +1,30 @@
+.main {
+  background-color: $text-color-menu;
+  &__content {
+    display: grid;
+    row-gap: 92px;
+    padding-block: 60px 120px;
+
+    &:last-child {
+      row-gap: 80px;
+      @include onTablet {
+        row-gap: 120px;
+      }
+
+      @include onDesktop {
+        row-gap: 180px;
+      }
+
+    }
+
+    @include onTablet {
+      padding-block: 120px;
+      row-gap: 120px;
+    }
+
+    @include onDesktop {
+      padding-block: 120px 182px;
+    }
+  }
+
+}

@@ -1,0 +1,39 @@
+.about {
+  @include pageGrid;
+
+  @include onTablet {
+    padding-bottom: 12px;
+  }
+
+  @include onDesktop {
+    padding-bottom: 44px;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__content {
+    line-height: 32.2px;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / 7;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
+  }
+}
