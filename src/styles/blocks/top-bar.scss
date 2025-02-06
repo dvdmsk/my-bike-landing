@@ -6,7 +6,7 @@
   align-items: center;
 
 
-  @include onTablet {
+  @include on-tablet {
     padding-block: 36px;
   }
 
@@ -18,7 +18,7 @@
 
     @include hover(transform, scale(1.2));
 
-    @include onTablet {
+    @include on-tablet {
       height: 56px;
     }
 
@@ -26,7 +26,8 @@
       user-select: none;
       font-size: 38px;
       color: #fff;
-      @include onTablet {
+
+      @include on-tablet {
         font-size: 56px;
       }
 
